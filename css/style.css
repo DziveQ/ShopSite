@@ -3,13 +3,36 @@ body {
 }
 
 #navbar {
-    background-color: greenyellow;
+    background-color: black;
     min-width: 100%;
     min-height: 6vh;
+
+    border: solid #ee00b3 2px;
+}
+
+#logo {
+    float: left;
+    background-color: blue;
+    max-width: 10%;
 }
 
 .navbar-component {
-    background-color: yellow;
+    float: left;
+
     max-width: 10%;
+    max-height: 5.6vh;
     padding: 1%;
+    
+    text-align: center;
+
+    border-right: dotted 2px white;
+}
+
+a:link, a:visited {
+    color: white;
+}
+
+a:hover {
+    color: #ee00b3;
+    text-decoration: none;
 }
