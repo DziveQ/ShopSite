@@ -39,6 +39,36 @@
     max-height: 94vh;
 }
 
+#chat {
+    margin-top: -5%;
+    margin-left: 80%;
+    margin-right: 21%;
+
+    background-color: white;
+    min-height: 50vh;
+    min-width: 15vw;
+
+    border: solid #ee00b3 2px;
+    border-radius: 2%;
+
+    display: none;
+}
+
+#chat-alert {
+    margin-top: 26%;
+    margin-left: 93%;
+    margin-right: 2%;
+
+    background-color: white;
+    min-height: 1vh;
+    min-width: 1vw;
+
+    font-size: 400%;
+    text-align: center;
+
+    border-radius: 40%;
+}
+
 a:link, a:visited {
     color: white;
 }
