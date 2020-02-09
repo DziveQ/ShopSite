@@ -1,19 +1,12 @@
-body {
-    color: white;
-}
-
 #navbar {
     background-color: black;
     min-width: 100%;
     min-height: 6vh;
+    max-height: 6vh;
 
     border: solid #ee00b3 2px;
-}
 
-#logo {
-    float: left;
-    background-color: blue;
-    max-width: 10%;
+    color: white;
 }
 
 .navbar-component {
@@ -26,6 +19,24 @@ body {
     text-align: center;
 
     border-right: dotted 2px white;
+}
+
+.right-navbar-component {
+    float: right;
+
+    max-width: 10%;
+    max-height: 5.6vh;
+    padding: 1%;
+    
+    text-align: center;
+
+    border-left: dotted 2px white;
+}
+
+#site {
+    background-color: #c3c3c3;
+    min-height: 94vh;
+    max-height: 94vh;
 }
 
 a:link, a:visited {
