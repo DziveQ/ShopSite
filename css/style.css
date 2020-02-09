@@ -1,1 +1,15 @@
-ss
+body {
+    color: white;
+}
+
+#navbar {
+    background-color: greenyellow;
+    min-width: 100%;
+    min-height: 6vh;
+}
+
+.navbar-component {
+    background-color: yellow;
+    max-width: 10%;
+    padding: 1%;
+}
