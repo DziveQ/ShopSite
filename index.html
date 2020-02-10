@@ -19,60 +19,70 @@
 
     <body>
         <div id="navbar">
-            <div class="navbar-component">
-                <a href="index.html">
-                    <mark>Home</mark>
-                </a>
+            <div id="homeNav" class="navbar-component" onclick="homeSite()">
+                <mark>Home</mark>
             </div>
 
-            <div class="navbar-component">
-                <a href="about.html">
-                    About us
-                </a>
+            <div id="usNav" class="navbar-component" onclick="usSite()">
+                About us
             </div>
 
-            <div class="navbar-component">
-                <a href="shop.html">
-                    Products
-                </a>
+            <div id="productsNav" class="navbar-component" onclick="productsSite()">
+                Products
             </div>
 
-            <div class="navbar-component">
-                <a href="contact.html">
-                    Contact Us
-                </a>
+            <div id="contactNav" class="navbar-component" onclick="contactSite()">
+                Contact Us
             </div>
 
 
 
-            <div class="right-navbar-component">
-                <a href="login.html">
-                    <i class="fas fa-sign-in-alt"></i> Login
-                </a>
+            <div id="loginNav" class="right-navbar-component" onclick="loginSite()">
+                <i class="fas fa-sign-in-alt"></i> Login
             </div>
         </div>
 
         <div id="site" style="padding-top: 5%">
-            <div id="title" class="display-2" style="text-align: center;">
-                DziveQ Shop
-
-                <h4 style="padding-top: 3%;">You can buy many good things here :D</h4>
+            <div id="home">
+                <div id="title" class="display-2" style="text-align: center;">
+                    DziveQ Shop
+    
+                    <h4 style="padding-top: 3%;">You can buy many good things here :D</h4>
+                </div>
+    
+    
+                <audio id="notify" src="assets/sounds/notify.mp3"></audio>
+                <!--CHAT-->
+                <div id="chat">
+                    <div onclick="closeChat()">X</div>  Chat
+                </div>
+    
+                <div id="chat-alert" onclick="chatOpen()">
+                    <i class="fas fa-comments"></i>
+                </div>
             </div>
 
-
-            <!--CHAT-->
-            <div id="chat">
-                <div onclick="closeChat()">X</div>  Chat
+            <div id="us" style="display: none;">
+                <center>About Us</center>
             </div>
 
-            <div id="chat-alert" onclick="chatOpen()">
-                <i class="fas fa-comments"></i>
+            <div id="products" style="display: none;">
+                <center>Products</center>
+            </div>
+
+            <div id="contact" style="display: none;">
+                <center>Contact</center>
+            </div>
+
+            <div id="login" style="display: none;">
+                <center>Login</center>
             </div>
         </div>
 
 
 
         <!--JS SCRIPTS-->
-        <script src="js/chat.js"></script>
+        <script src="js/chat.js"></script> <!--CHAT-->
+        <script src="js/csite.js"></script> <!--NAVBAR SITES-->
     </body>
 </html>
